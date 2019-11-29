@@ -1,7 +1,7 @@
 # modern-slide-menu
 Slide Menu with follow-up animations for react native built on expo
 
-![alt text](https://github.com/eipic/modern-slide-menu/blob/master/screenshots/1.png)
+![alt text](https://github.com/eipic/modern-slide-menu/blob/master/screenshots/2.png)
 
 A very easy to use slide menu with modern animations created using react-native-animatable dependency.
 
