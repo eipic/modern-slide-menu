@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 import Nav from '../components/nav';
-import { AntDesign } from '@expo/vector-icons';
 
 export default class Home extends Component {
     
@@ -18,8 +17,9 @@ export default class Home extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.contentContainer}>
-                    <TouchableOpacity onPress={() => this.openMenu()}>
-                        <Text>Hello</Text>
+                    <Text style={styles.title}>Modern Slide Menu</Text>
+                    <TouchableOpacity onPress={() => this.openMenu()} style={styles.button}>
+                        <Text style={{ color: 'white' }}>Open Menu</Text>
                     </TouchableOpacity>
                 </View>
                 <Nav 
@@ -60,5 +60,16 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    button:{
+        backgroundColor: '#b4004e',
+        borderRadius: 3,
+        paddingHorizontal: 16,
+        paddingVertical: 8
+    },
+    title:{
+        fontSize: 22,
+        color: 'gray',
+        marginBottom: 36
     }
 })
